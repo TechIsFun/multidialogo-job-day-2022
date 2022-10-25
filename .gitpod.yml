@@ -1,14 +1,10 @@
 tasks:
-  - name: create .env file
+  - name: setup laravel app
     command: |
       cp .env.example .env
-  - name: run composer install
-    command: |
       composer install
-  - name: generate app key
-    command: |
       php artisan key:generate
-  - name: start app
-    command: php artisan serve
+      php artisan serve
+    
 
 
